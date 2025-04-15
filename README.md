@@ -3,7 +3,7 @@
 
 Este proyecto está compuesto por tres aplicaciones independientes:
 
-- `host`: Aplicación principal que consume los microfrontends se ejecuta en el puerto **3000**
+- `host`: Aplicación principal que consume los microfrontends se ejecuta en el puerto **3000**.
 - `listado`: Microfrontend que se ejecuta en el puerto **3001**.
 - `pagination`: Microfrontend que se ejecuta en el puerto **3002**.
 
@@ -38,7 +38,7 @@ Este proyecto está compuesto por tres aplicaciones independientes:
 	npm install
 	npm run dev
 
-🔗 Una vez iniciado, podés acceder al `host` en: [http://localhost:3000](http://localhost:3000)
+🔗 Una vez iniciado, puded acceder al `host` en: [http://localhost:3000](http://localhost:3000)
 
 ----------
 
