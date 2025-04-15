@@ -1,0 +1,2 @@
+# domina-app
+Micro frontend
