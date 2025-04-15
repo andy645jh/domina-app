@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { PAGE_COUNT_EVT_NAME, PAGE_EVT_NAME, SEARCH_EVT_NAME } from '../utils/Constants';
 import styles from '../style.module.css';
+import { getCharacters } from '../services/ApiService';
 
 type Character = {
     id: number,
@@ -16,23 +17,16 @@ const UserListComponent: React.FC = () => {
 
     useEffect(() => {
         const fetchUsers = async () => {
+            const data = await getCharacters(searchWord, page);
+            console.log(data);
+            if (data.results.length > 0) {
+                setCharacters(data.results);
 
-            const path = '?name=' + searchWord + '&page=' + page;
-
-            await fetch('https://rickandmortyapi.com/api/character/' + path)
-                .then(response => response.json())
-                .then((data) => {
-
-                    if (data.error) {
-                        setCharacters([]);
-                        return;
-                    }
-
-                    setCharacters(data.results);
-
-                    const customEvent = new CustomEvent(PAGE_COUNT_EVT_NAME, { detail: data.info.pages });
-                    window.dispatchEvent(customEvent);
-                });
+                const customEvent = new CustomEvent(PAGE_COUNT_EVT_NAME, { detail: data.info.pages });
+                window.dispatchEvent(customEvent);
+            } else {
+                setCharacters([]);
+            }
         }
 
         fetchUsers();
