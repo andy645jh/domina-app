@@ -1,0 +1,39 @@
+.active a {
+	color: brown;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+li {
+	padding: 10px;
+}
+
+li a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	margin: 10px;
+	background-color: #e5e5de;
+	padding: 10px;
+	min-width: 200px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.characterCard {
+	padding: 10px;
+	background-color: #f0f0f0;
+	flex-flow: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px;
+	width: 200px;
+}
