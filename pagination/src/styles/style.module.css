@@ -1,0 +1,19 @@
+.active a {
+	color: brown;
+	text-decoration: underline;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+li {
+	padding: 10px;
+}
+
+li a {
+	text-decoration: none;
+	cursor: pointer;
+}

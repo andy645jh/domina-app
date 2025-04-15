@@ -9,6 +9,7 @@ export default defineConfig({
       name: 'listado',
       remotes: {
         listado: 'http://localhost:3001/assets/remoteEntry.js',
+        pagination: 'http://localhost:3002/assets/remoteEntry.js',
       },
       shared: ['react', 'react-dom'],
     }),

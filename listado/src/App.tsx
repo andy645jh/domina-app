@@ -1,6 +1,6 @@
 import ReactPaginate from 'react-paginate';
 import './App.css'
-import UserListComponent from './UserListComponent';
+import UserListComponent from './components/UserListComponent';
 import { PAGE_COUNT_EVT_NAME, PAGE_EVT_NAME } from './utils/Constants';
 import { useEffect, useState } from 'react';
 

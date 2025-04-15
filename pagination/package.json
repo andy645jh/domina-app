@@ -1,20 +1,20 @@
 {
-  "name": "host",
+  "name": "pagination",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port 3002 --strictPort",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview --port 3002 --strictPort",
+    "start-mf": "npm run build && npm run preview"
   },
   "dependencies": {
     "@originjs/vite-plugin-federation": "^1.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-paginate": "^8.3.0",
-    "use-debounce": "^10.0.4"
+    "react-paginate": "^8.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

@@ -1,0 +1,12 @@
+.searchInput {
+	height: 30px;
+	width: 250px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.searchInput:focus-visible {
+	outline-width: 0;
+	border-bottom-color: rgb(90, 182, 218);
+}

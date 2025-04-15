@@ -1,22 +1,3 @@
-.active a {
-	color: brown;
-}
-
-ul {
-	display: flex;
-	justify-content: center;
-	list-style-type: none;
-}
-
-li {
-	padding: 10px;
-}
-
-li a {
-	text-decoration: none;
-	cursor: pointer;
-}
-
 .container {
 	display: flex;
 	margin: 10px;
