@@ -10,3 +10,5 @@ export const getCharacters = async (searchWord: string, page: number) => {
     const data = await response.json();
     return data;
 };
+
+
